@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+  <filter root="/apps/vue-app"/>
+  <filter root="/conf/vue-app"/>
+  <filter root="/content/vue-app"/>
+  <filter root="/etc/clientlibs/vue-app"/>
+</workspaceFilter>

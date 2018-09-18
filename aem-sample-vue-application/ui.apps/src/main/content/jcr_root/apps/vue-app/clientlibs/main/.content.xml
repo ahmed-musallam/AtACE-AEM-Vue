@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    allowProxy="{Boolean}true"
+    categories="[vue-app.main]"
+    embed="[vue-app.vendor.axios,vue-app.vendor.vue,vue-app.vendor.spectre,vue-app.dependencies,vue-app.components,vue-app.instance]"/>

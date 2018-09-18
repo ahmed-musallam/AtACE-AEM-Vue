@@ -1,0 +1,10 @@
+<!--/*
+  Using the same templaited container used in we.retail sample
+*/-->
+<div class="container">
+    <sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+         data-sly-repeat.child="${templatedContainer.structureResources}"
+         data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"/>
+  <h1>VUE PAR:</h1>
+  <sly data-sly-resource="${'par2' @ resourceType='vue-app/components/content/vue-parsys', decorationTagName='div'}"></sly>
+</div>

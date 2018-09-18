@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+  jcr:mixinTypes="[rep:AccessControllable]"
+  jcr:primaryType="cq:Page" >
+  <wcm jcr:primaryType="nt:unstructured">
+    <foundation jcr:primaryType="nt:unstructured">
+      <components jcr:primaryType="nt:unstructured">
+        <parsys jcr:primaryType="nt:unstructured">
+          <vue-silos-policy jcr:primaryType="nt:unstructured"
+            jcr:title="vue-siols"
+            components="[group:Vue Silos General,group:Vue Silos Structure,group:We.Retail]"
+            sling:resourceType="wcm/core/components/policy/policy">
+          </vue-silos-policy>
+        </parsys>
+      </components>
+    </foundation>
+  </wcm>
+</jcr:root>

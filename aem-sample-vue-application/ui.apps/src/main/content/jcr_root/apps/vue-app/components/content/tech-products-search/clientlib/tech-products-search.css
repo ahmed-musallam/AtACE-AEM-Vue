@@ -1,0 +1,12 @@
+.product-price {
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+}
+.product-result {
+  border-left: 0.25em solid #5755d9
+}
+.form-input {
+  vertical-align: middle;
+}

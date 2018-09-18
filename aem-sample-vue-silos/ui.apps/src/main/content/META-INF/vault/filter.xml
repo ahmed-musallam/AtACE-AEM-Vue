@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+  <filter root="/apps/vue-silos"/>
+  <filter root="/conf/vue-silos"/>
+  <filter root="/content/vue-silos"/>
+  <filter root="/etc/clientlibs/vue-silos"/>
+</workspaceFilter>

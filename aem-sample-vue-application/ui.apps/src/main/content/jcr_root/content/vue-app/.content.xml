@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/vue-app/settings/wcm/templates/.*]"
+        cq:conf="/conf/vue-app"
+        cq:cloudserviceconfigs="[]"
+        cq:deviceGroups="[mobile/groups/responsive]"
+        jcr:language="en_US"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Vue app"
+        sling:resourceType="vue-app/components/page/base"
+        cq:redirectTarget="/content/vue-app/home/sample">
+        <image
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0">
+            <file/>
+        </image>
+    </jcr:content>
+    <home/>
+</jcr:root>

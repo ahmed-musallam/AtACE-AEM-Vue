@@ -1,0 +1,51 @@
+<div class="container" aem-comp="tech-product-search">
+  <h2>${properties.title}</h2>
+  <!--/* Search and Filter */-->
+  <form class="form-group m-2" v-on:submit.prevent="search(0, $event)">
+    <div class="form-inline">
+        <input class="form-input form-inline" type="text" placeholder="Text" v-model="query">
+    </div>
+    <div class="form-inline">
+      <select class="form-select" v-model="filters.inStock">
+        <option value="">either</option>
+        <option value="true">in stock</option>
+        <option value="false">out of stock</option>
+      </select>
+    </div>
+    <button class="btn btn-primary form-inline" @click="search(0, $event)">search</button>
+  </form>
+  <!--/* Pagination */-->
+  <ul class="pagination" v-if="docs || docs.length">
+    <li class="page-item" :class="{active: page}" v-for="(page, index) in pages">
+      <a href="#" tabindex="-1" @click="search(index)">{{index+1}}</a>
+    </li>
+  </ul>
+  <!-- SEARCH RESULTS-->
+  <template v-for="(doc, index) in docs">
+    <div class="tile m-2 p-2 product-result" v-if="docs && docs.length" >
+      <div class="product-price tile-icon bg-primary text-light s-circle centered">
+        <span>$</span>{{doc.price}}
+      </div>
+      <div class="tile-content">
+        <p class="tile-title"><span class="text-bold">{{doc.name}}</span></p>
+        <p class="tile-subtitle text-gray">
+          <span class="chip bg-primary">{{doc.inStock ? "in stock" : "out of stock"}}</span>
+          <br/>
+          Categories: <span class="chip" v-for="(catItem, index) in doc.cat">{{catItem}}</span>
+        </p>
+        <button class="btn btn-primary m-1">Buy</button><button class="btn m-1">More Options</button>
+      </div>
+    </div>
+    <div class="divider" v-if="index < docs.length - 1"></div>
+  </template>
+  
+
+  <!--/* EMPTY STATE*/-->
+  <div class="empty" v-if="!docs || !docs.length">
+    <div class="empty-icon">
+      <i class="icon icon-people"></i>
+    </div>
+    <p class="empty-title h5">${properties.noResultTitle}</p>
+    <p class="empty-subtitle">${properties.noResultText}</p>
+  </div>
+</div>
