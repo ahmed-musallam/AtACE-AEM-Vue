@@ -1,3 +1,4 @@
+const CopyPlugin =  require("./CopyPlugin")
 module.exports = {
   chainWebpack: config => {
     // dont do code splitting
@@ -13,6 +14,9 @@ module.exports = {
   configureWebpack: {
     output: {
       filename: '[name].js'
-    }
+    },
+    plugins: [
+      new CopyPlugin({dist: "../src/main/content/jcr_root/apps/vue-app/clientlibs/main"})
+    ]
   }
 }

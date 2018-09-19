@@ -23,3 +23,5 @@ ui.apps/**/node_modules
 
 #solr
 solr/
+
+aem-sample-vue-application/ui\.apps/vue-app/node/

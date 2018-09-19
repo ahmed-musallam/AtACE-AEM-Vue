@@ -1,1 +1,1 @@
-plugins/aem-vue-helpers.js
+#plugins/aem-vue-helpers.js

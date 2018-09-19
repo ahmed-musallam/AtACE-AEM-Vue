@@ -119,12 +119,13 @@
                         <goals><goal>npm</goal></goals>
                     </execution>
                     <execution>
-                        <id>gulp-build</id>
-                        <goals><goal>gulp</goal></goals>
+                        <id>vue-build</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
                         <configuration>
-                            <environmentVariables>
-                            <NODE_ENV>dev</NODE_ENV>
-                            </environmentVariables>
+                            <executable>npm</executable>
+                            <arguments>run build</arguments>
                         </configuration>
                     </execution>
                 </executions>

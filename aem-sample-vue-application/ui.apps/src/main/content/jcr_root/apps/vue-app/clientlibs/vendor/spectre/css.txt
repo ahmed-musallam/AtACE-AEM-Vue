@@ -1,2 +1,0 @@
-spectre.min.css
-spectre-icons.min.css

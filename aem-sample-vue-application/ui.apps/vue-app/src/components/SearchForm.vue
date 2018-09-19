@@ -1,5 +1,5 @@
 <template>
-  <form class="form-group m-2">
+  <form class="form-group m-2" v-on:submit.prevent>
     <div class="form-inline">
         <input class="form-input form-inline" type="text" placeholder="Text" v-model="query">
     </div>
@@ -20,7 +20,9 @@ export default {
   data() {
     return {
         query: "",
-        inStock: ""
+        inStock: "",
+        resourceType: "/apps/vue-app/components/content/tech-products-search",
+        jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/search-form"
     }
   },
   methods: {

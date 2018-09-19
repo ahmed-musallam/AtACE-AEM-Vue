@@ -16,7 +16,8 @@ export default {
     subtitle: String
   },
   data: () => ({
-    resourceType: "path/to/resource"
+    resourceType: "/apps/vue-app/components/content/tech-products-search",
+    jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/empty"
   }),
 }
 </script>

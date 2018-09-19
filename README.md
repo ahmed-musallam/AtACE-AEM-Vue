@@ -1,5 +1,7 @@
 # Vue Sample Implementation with AEM
 
+
+
 # aem-sample-vue-silos
 A demo of a pattern where each AEM component *can* be a Vue instance.
 
