@@ -5,9 +5,7 @@ Vue.newInstance('vue-select', {
       selected: ""
     }
   },
-  methods: {
-
-  },
+  methods: {},
   // see: https://github.com/sagalbot/vue-select
   components: {
     'v-select': VueSelect.VueSelect

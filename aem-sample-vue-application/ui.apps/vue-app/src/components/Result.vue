@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      resourceType: "/apps/vue-app/components/content/tech-products-search",
+      resourceType: "/apps/vue-app/dialogs/result",
       jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/result"
     }
   },

@@ -21,7 +21,7 @@ export default {
     return {
         query: "",
         inStock: "",
-        resourceType: "/apps/vue-app/components/content/tech-products-search",
+        resourceType: "/apps/vue-app/dialogs/search-form",
         jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/search-form"
     }
   },

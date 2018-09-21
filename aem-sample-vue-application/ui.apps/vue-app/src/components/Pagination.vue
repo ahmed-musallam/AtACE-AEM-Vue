@@ -16,8 +16,8 @@ export default {
   props: {
     length: Number,
     pages: Array,
-    resourceType: "/apps/vue-app/components/content/tech-products-search",
-    jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/pagination"
+    resourceType: "/apps/vue-app/dialogs/pagination",
+    jcrPath: "/pagination"
   }
 }
 </script>
