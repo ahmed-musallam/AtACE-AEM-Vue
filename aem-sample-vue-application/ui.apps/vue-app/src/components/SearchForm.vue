@@ -10,7 +10,7 @@
         <option value="false">out of stock</option>
       </select>
     </div>
-    <button class="btn btn-primary form-inline" @click="$emit('search', '', {query, inStock})">search</button>
+    <button class="btn btn-primary form-inline" @click="$emit('search', '', {query, inStock})">{{searchText}}</button>
   </form>
 </template>
 <script>
@@ -19,14 +19,17 @@ export default {
   props: {},
   data() {
     return {
+        searchText: "Search",
         query: "",
         inStock: "",
         resourceType: "/apps/vue-app/dialogs/search-form",
-        jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/search-form"
+        jcrPath: "/search-form"
     }
   },
   methods: {
-
+    update(data){
+      this.searchText = data.searchText
+    }
   }
 }
 </script>
