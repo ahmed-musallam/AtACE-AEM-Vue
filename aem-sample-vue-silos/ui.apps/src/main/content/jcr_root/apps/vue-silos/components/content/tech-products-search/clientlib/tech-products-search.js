@@ -26,7 +26,7 @@ Vue.newInstance('tech-product-search', {
         q: this.query || '*:*',
         start: pageNum ? pageNum : 0
       };
-      return axios.get('http://localhost:8982/solr/techproducts/select', { params });
+      return axios.get('http://localhost:8983/solr/techproducts/select', { params });
     },
     search: function (pageNum, event) {
       var that = this;

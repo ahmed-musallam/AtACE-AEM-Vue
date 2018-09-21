@@ -56,7 +56,7 @@ export default {
         q: this.formData.query || '*:*',
         start: pageNum ? pageNum: 0 
       };
-      return axios.get('http://localhost:8982/solr/techproducts/select', { params });
+      return axios.get('http://localhost:8983/solr/techproducts/select', { params });
     },
     // eslint-disable-next-line
     search: function (pageNum, data) {
