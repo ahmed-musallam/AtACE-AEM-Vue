@@ -12,12 +12,26 @@
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
+            <title
+                jcr:primaryType="nt:unstructured"
+                type="h1"
+                jcr:title="Tech Product Search"
+                sling:resourceType="weretail/components/content/title"/>
             <tech-products-search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="vue-silos/components/content/tech-products-search"
                 title="Search For Products"
                 noResultTitle="No Results found :("
                 noResultText="Try a different search query or filter"/>
+            <vue-select-title
+                jcr:primaryType="nt:unstructured"
+                type="h2"
+                jcr:title="Vue Select Demo:"
+                sling:resourceType="weretail/components/content/title"/>
+            <vue-select
+                jcr:primaryType="nt:unstructured"
+                options="[pick me!, noooo pick me!, me me me me!, whatever... I dont care...]"
+                sling:resourceType="vue-silos/components/content/vue-select"/>
         </par>
     </jcr:content>
 </jcr:root>
