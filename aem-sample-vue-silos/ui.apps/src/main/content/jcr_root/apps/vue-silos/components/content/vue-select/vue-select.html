@@ -1,0 +1,10 @@
+<div class="container m-2 p-2" aem-comp="vue-select">
+  <sly data-sly-use.model="vue-list.js"></sly>
+  <v-select v-model="selected" placeholder="pick a word, any word!" :options="${model.options @ context='unsafe'}"></v-select>
+  <p v-if="selected">
+    You've selected: <b>{{selected}}</b>
+  </p>
+  <p v-if="!selected">
+      nothing selected yet :(
+  </p>
+</div>
