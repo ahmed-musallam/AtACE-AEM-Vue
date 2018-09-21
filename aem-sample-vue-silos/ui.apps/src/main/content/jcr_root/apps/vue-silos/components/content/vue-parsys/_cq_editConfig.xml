@@ -3,5 +3,5 @@
     jcr:primaryType="cq:EditConfig">
     <cq:listeners 
         jcr:primaryType="cq:EditListenersConfig"
-        afterchildinsert="function(){ns.REFRESH_VUE(this)}"/>
+        afterchildinsert="function(){ns.REFRESH_VUE_SILO(this)}"/>
 </jcr:root>

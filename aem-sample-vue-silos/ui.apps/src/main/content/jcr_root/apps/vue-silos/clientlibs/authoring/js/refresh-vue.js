@@ -4,7 +4,8 @@
    * Initializes a Vue component from its editable.
    * @param {Granite.author.Editable} editable 
    */
-  ns.REFRESH_VUE = function refreshVue (editable) {
+  ns.REFRESH_VUE_SILO = function refreshVue (editable) {
+    console.log("refreshing ", editable)
     if (!editable) return;
     editable = editable.editable ? editable.editable : editable;
     var el = editable.dom.get(0);
