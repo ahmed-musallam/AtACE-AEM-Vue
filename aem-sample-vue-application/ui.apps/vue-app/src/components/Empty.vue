@@ -11,11 +11,10 @@
 <script>
 export default {
   name: 'Empty',
-  props: {
-    title: String,
-    subtitle: String
-  },
+  props: {},
   data: () => ({
+    title: "No data to show",
+    subtitle: "nada!",
     resourceType: "/apps/vue-app/dialogs/empty",
     jcrPath: "/empty"
   }),

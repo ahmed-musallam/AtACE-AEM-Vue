@@ -22,15 +22,6 @@ export default {
   name: 'Result',
   props: {
     doc: Object
-  },
-  data() {
-    return {
-      resourceType: "/apps/vue-app/dialogs/result",
-      jcrPath: "/content/vue-app/home/sample/jcr:content/tech-products-search/result"
-    }
-  },
-  methods: {
-
   }
 }
 </script>

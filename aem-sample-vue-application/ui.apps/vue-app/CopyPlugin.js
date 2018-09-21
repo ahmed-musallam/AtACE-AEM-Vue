@@ -12,7 +12,6 @@ module.exports = class  CopyPlugin {
   // copy file from src to distination folder
   copy(src, distFolder) {
     const dist = path.join(distFolder, path.basename(src))
-    // eslint-disable-next-line
     console.log(`copying ${src} to ${dist}`)
     fs.copyFileSync(src, dist);
   }

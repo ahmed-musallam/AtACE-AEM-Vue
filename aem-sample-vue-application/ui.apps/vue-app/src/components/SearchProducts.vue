@@ -9,7 +9,7 @@
       <Result :doc="doc" :key="index"/>
     </template>
     <!--/* EMPTY STATE*/-->
-    <Empty title="sad ;(" subtitle="nothin' to see here" v-if="!docs || !docs.length"></Empty>
+    <Empty v-if="!docs || !docs.length"></Empty>
   </div>
 </template>
 
@@ -58,7 +58,6 @@ export default {
       };
       return axios.get('http://localhost:8983/solr/techproducts/select', { params });
     },
-    // eslint-disable-next-line
     search: function (pageNum, data) {
       this.formData = data ? data : this.formData
       var that = this;

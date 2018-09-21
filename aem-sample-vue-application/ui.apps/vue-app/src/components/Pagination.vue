@@ -15,9 +15,7 @@ export default {
   name: 'Pagination',
   props: {
     length: Number,
-    pages: Array,
-    resourceType: "/apps/vue-app/dialogs/pagination",
-    jcrPath: "/pagination"
+    pages: Array
   }
 }
 </script>
