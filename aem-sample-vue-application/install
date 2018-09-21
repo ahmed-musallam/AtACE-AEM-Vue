@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mvn clean install -PautoInstallPackage -DskipTests -Dcrx.port=4504
