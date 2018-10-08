@@ -1,6 +1,8 @@
 # Vue Sample Implementation with AEM
 
+This is the demo code for my presentation for AtACE [Developing AEM component using Vue.js](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-vue.html)
 
+> Tested only on AEM 6.4. Though it "should" wok on AEM 6.3 but have not tested.
 
 # aem-sample-vue-silos
 A demo of a pattern where each AEM component *can* be a Vue instance.
